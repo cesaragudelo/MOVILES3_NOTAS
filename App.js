@@ -44,8 +44,8 @@ export default function App() {
   };
 
   return (
-    <View style={styles.container}>
-      <View style={[styles.container, { flex: 1, backgroundColor: "orange" }]}>
+    <View style={[styles.container,{backgroundColor: "white"}]}>
+      <View style={[styles.container, { flex: 1,backgroundColor:"powderblue" }]}>
         <Banner name="calculadora"></Banner>
       </View>
       <View
@@ -54,10 +54,12 @@ export default function App() {
         <Text style={{ fontWeight: "bold" }}>Calculadora Básica</Text>
         <Text>Valor 1</Text>
         <TextInput
+        
           placeholder="Ingrese valor 1"
           style={styles.inputs}
           onChangeText={(valor1) => setValor1(valor1)}
           value={valor1}
+          
         />
         <Text>Valor 2</Text>
         <TextInput
@@ -128,6 +130,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
+    
   },
   inputs: {
     color: "blue",

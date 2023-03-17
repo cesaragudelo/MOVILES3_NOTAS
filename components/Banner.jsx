@@ -1,8 +1,7 @@
-import { Image, Text } from "react-native-web";
+import { Text } from "react-native-web";
 
 export default function Banner(props){
     return(
-      <Image source={require(`../assets/images/${props.name}.png`)} style={{width:'100%',
-          height:'100%',resizeMode:'stretch'}}></Image>
+      <Text style={{ color:"black", fontSize:35,backgroundColor:"powderblue" }}>Sistema de notas</Text>
     )
   }
